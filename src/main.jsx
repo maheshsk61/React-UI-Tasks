@@ -10,6 +10,7 @@ import Pagination from "./TasksList/pagination.jsx";
 import SearchAndFilter from "./TasksList/product-search-filter.jsx";
 import ToggleSwitch from "./TasksList/toggle-switch.jsx";
 import DropdownSelector from "./TasksList/drop-down-selection.jsx";
+import ImageCarousel from "./TasksList/image-carousel.jsx";
 
 const DynamicTask = () => {
   const { taskName } = useParams();
@@ -23,6 +24,8 @@ const DynamicTask = () => {
     <ToggleSwitch/>
   ) : taskName === "drop-down-selection" ? (
     <DropdownSelector/>
+  ) : taskName === "image-carousel" ? (
+    <ImageCarousel/>
   ) : null;
 };
 
