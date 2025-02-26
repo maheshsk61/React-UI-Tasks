@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import ToDoList from "./TasksList/to-do-list.jsx";
 import Pagination from "./TasksList/pagination.jsx";
+import SearchAndFilter from "./TasksList/product-search-filter.jsx";
 
 const DynamicTask = () => {
   const { taskName } = useParams();
@@ -14,6 +15,8 @@ const DynamicTask = () => {
     <ToDoList />
   ) : taskName === "pagination" ? (
     <Pagination />
+  ) : taskName === "search-filter" ? (
+    <SearchAndFilter/>
   ) : null;
 };
 
