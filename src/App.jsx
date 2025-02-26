@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const App = () => {
-  const tasksList = ["toDo", "pagination","search-filter"];
+  const tasksList = ["toDo", "pagination", "search-filter", "toggle-switch"];
   return (
     <>
       <h1>List of Tasks</h1>

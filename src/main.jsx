@@ -8,6 +8,7 @@ import {
 import ToDoList from "./TasksList/to-do-list.jsx";
 import Pagination from "./TasksList/pagination.jsx";
 import SearchAndFilter from "./TasksList/product-search-filter.jsx";
+import ToggleSwitch from "./TasksList/toggle-switch.jsx";
 
 const DynamicTask = () => {
   const { taskName } = useParams();
@@ -17,6 +18,8 @@ const DynamicTask = () => {
     <Pagination />
   ) : taskName === "search-filter" ? (
     <SearchAndFilter/>
+  ) : taskName === "toggle-switch" ? (
+    <ToggleSwitch/>
   ) : null;
 };
 
