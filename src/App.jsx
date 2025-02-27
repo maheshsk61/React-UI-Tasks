@@ -8,6 +8,7 @@ const App = () => {
     "toggle-switch",
     "drop-down-selection",
     "image-carousel",
+    "api-table-filter",
   ];
   return (
     <>
