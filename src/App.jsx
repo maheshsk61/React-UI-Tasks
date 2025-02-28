@@ -9,6 +9,7 @@ const App = () => {
     "drop-down-selection",
     "image-carousel",
     "api-table-filter",
+    "quiz",
   ];
   return (
     <>

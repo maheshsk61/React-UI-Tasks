@@ -12,6 +12,7 @@ import ToggleSwitch from "./TasksList/toggle-switch.jsx";
 import DropdownSelector from "./TasksList/drop-down-selection.jsx";
 import ImageCarousel from "./TasksList/image-carousel.jsx";
 import SearchApiData from "./TasksList/api-table-filter.jsx";
+import Quiz from "./TasksList/quiz.jsx";
 
 const DynamicTask = () => {
   const { taskName } = useParams();
@@ -29,6 +30,8 @@ const DynamicTask = () => {
     <ImageCarousel/>
   ) :  taskName === "api-table-filter" ? (
     <SearchApiData/>
+  ) : taskName === "quiz" ? (
+    <Quiz/>
   ) : null;
 };
 
