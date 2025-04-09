@@ -13,6 +13,7 @@ import DropdownSelector from "./TasksList/drop-down-selection.jsx";
 import ImageCarousel from "./TasksList/image-carousel.jsx";
 import SearchApiData from "./TasksList/api-table-filter.jsx";
 import Quiz from "./TasksList/quiz.jsx";
+import DatePick from "./TasksList/date-picker.jsx";
 
 const DynamicTask = () => {
   const { taskName } = useParams();
@@ -21,17 +22,19 @@ const DynamicTask = () => {
   ) : taskName === "pagination" ? (
     <Pagination />
   ) : taskName === "search-filter" ? (
-    <SearchAndFilter/>
+    <SearchAndFilter />
   ) : taskName === "toggle-switch" ? (
-    <ToggleSwitch/>
+    <ToggleSwitch />
   ) : taskName === "drop-down-selection" ? (
-    <DropdownSelector/>
+    <DropdownSelector />
   ) : taskName === "image-carousel" ? (
-    <ImageCarousel/>
-  ) :  taskName === "api-table-filter" ? (
-    <SearchApiData/>
+    <ImageCarousel />
+  ) : taskName === "api-table-filter" ? (
+    <SearchApiData />
   ) : taskName === "quiz" ? (
-    <Quiz/>
+    <Quiz />
+  ) : taskName === "date-picker" ? (
+    <DatePick />
   ) : null;
 };
 

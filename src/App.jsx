@@ -10,6 +10,7 @@ const App = () => {
     "image-carousel",
     "api-table-filter",
     "quiz",
+    "date-picker"
   ];
   return (
     <>
